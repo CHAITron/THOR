@@ -1,3 +1,3 @@
 # THOR
 Touchless Hand Operation Response (THOR)
-![THOR](/images/logo.png) <img src="/images/thor.jpg" width="220"/>
+<img src="/images/logo.png" width="425"/><img src="/images/thor.jpg" width="425"/>
