@@ -7,5 +7,5 @@
 ## Circuit Design
 
 <p align="center">
-  <img width="600" src="/images/circuit.png">
+  <img width="800" src="/images/circuit.png">
 </p>
