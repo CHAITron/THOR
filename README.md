@@ -1,6 +1,6 @@
 # THOR
 Touchless Hand Operation Response (THOR)<br />
-<p align="left">
+<p align="center">
   <img width="400" src="/images/logo.png">
 </p>
 <p align="center">
