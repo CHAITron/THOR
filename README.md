@@ -1,7 +1,7 @@
 # THOR
 ## Touchless Hand Operation Response (THOR)
 <p align="left">
-  <img width="350" src="/images/logo.png"><img width="400" src="/images/sample.gif">
+  <img width="300" src="/images/logo.png"><img width="400" src="/images/sample.gif">
 </p>
 
 ## Circuit Design
