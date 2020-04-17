@@ -5,6 +5,12 @@
 </p>
 
 ## Circuit Design
+-Arduino UNO R3 x1 <br />
+-Ultrasonic Sensor (HC-SR04) x2 <br />
+-LED x2 (Green and Red)
+-Resistor 220 ohm x3
+-Protoboard x1
+-Connectors
 
 <p align="left">
   <img width="800" src="/images/circuit.png">
