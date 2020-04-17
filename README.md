@@ -1,7 +1,7 @@
 # THOR
 ## Touchless Hand Operation Response (THOR)
 <p align="left">
-  <img width="250" src="/images/logo.png"><img width="300" src="/images/sample.gif">
+  <img width="400" src="/images/logo.png"><img width="400" src="/images/sample.gif">
 </p>
 
 ## Circuit Design
@@ -12,5 +12,5 @@
 
 ## References
 
-For LCD code --> https://www.circuitbasics.com/how-to-set-up-an-lcd-display-on-an-arduino/
+For LCD code --> https://www.circuitbasics.com/how-to-set-up-an-lcd-display-on-an-arduino/ <br />
 Multiple HC-SR04 code --> https://github.com/PranaliDesai/Multiple-Ultrasonic-Sensor-
