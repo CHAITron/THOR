@@ -1,16 +1,19 @@
 
-int LED1 = 12;
-int LED2 = 11;
+int LED1 = 5; //Green LED
+int LED2 = 6; //Red LED
 
-int trigPin1=2;
-int echoPin1=3;
+int trigPin1=3; //First Ultrasonic sensor - OK BUTTON - Green LED
+int echoPin1=2;
 
-int trigPin2=8;
-int echoPin2=13;
+int trigPin2=7; //Second Ultrasonic sensor - CHOOSE BUTTON - Red LED
+int echoPin2=4;
 int num=0;
+
 String text="";
+
 #include <LiquidCrystal.h>
-LiquidCrystal lcd(10, 9, 4, 5, 6, 7);
+LiquidCrystal lcd(13, 12, 8, 9, 10, 11); //LCD Screen
+
 void setup() {
   Serial.begin (9600);            //set transmission rate (bit/secs)
   pinMode(trigPin1, OUTPUT);
@@ -27,16 +30,16 @@ void setup() {
 
 
 void loop() {
-  long duration1, distance1;
-  digitalWrite(trigPin1, LOW);  // Added this line
-  delayMicroseconds(2); // Added this line
+  long duration1, distance1; //distance use for HC-SR04 which is 'OK button' 
+  digitalWrite(trigPin1, LOW);
+  delayMicroseconds(2);
   digitalWrite(trigPin1, HIGH);
-  delayMicroseconds(10); // Added this line
+  delayMicroseconds(10);
   digitalWrite(trigPin1, LOW);
   duration1 = pulseIn(echoPin1, HIGH);
   distance1 = (duration1/2) / 29.1;
 
-   if (distance1 >= 15 || distance1 <= 0){
+   if (distance1 >= 15 || distance1 <= 0){  //15 cm is threshold distance you can change
     Serial.println("Out of range");
     digitalWrite(LED1, LOW);
   }
@@ -52,17 +55,17 @@ void loop() {
     Serial.print ( distance1);
     Serial.println("cm (PRESSING)");
   }
-  delay(200);
+  delay(200);   //you can adjust delay time for HC-SR04 sensitivity
 long duration2, distance2;
-  digitalWrite(trigPin2, LOW);  // Added this line
-  delayMicroseconds(2); // Added this line
+  digitalWrite(trigPin2, LOW);
+  delayMicroseconds(2);
   digitalWrite(trigPin2, HIGH);
-  delayMicroseconds(10); // Added this line
+  delayMicroseconds(10);
   digitalWrite(trigPin2, LOW);
   duration2 = pulseIn(echoPin2, HIGH);
   distance2= (duration2/2) / 29.1;
 
-   if (distance2 >= 15 || distance2 <= 0){
+   if (distance2 >= 15 || distance2 <= 0){   //15 cm is threshold distance you can change
     Serial.println("Out of range");
     digitalWrite(LED2, LOW);
   }
@@ -87,14 +90,5 @@ long duration2, distance2;
     if (num == 10){lcd.print("0123456789> / <.");}
     if (num == 11){lcd.print("0123456789/> . <");}
   }
-  delay(200);
-
-  /*digitalWrite(LED1, HIGH);    // turn on LED1
-  delay(200);                  // wait for 200ms       
-  digitalWrite(LED2, HIGH);    // turn on LED2 
-  delay(2000);                  // wait for 200ms
-  digitalWrite(LED1, LOW);     // turn off LED1
-  delay(300);                  // wait for 300ms
-  digitalWrite(LED2, LOW);     // turn off LED2
-  delay(300);*/                  // wait for 300ms before running program all over again
+  delay(200); //you can adjust delay time for HC-SR04 sensitivity
 }
