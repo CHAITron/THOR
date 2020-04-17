@@ -9,3 +9,8 @@
 <p align="center">
   <img width="800" src="/images/circuit.png">
 </p>
+
+## References
+
+For LCD code --> https://www.circuitbasics.com/how-to-set-up-an-lcd-display-on-an-arduino/
+Multiple HC-SR04 code --> https://github.com/PranaliDesai/Multiple-Ultrasonic-Sensor-
