@@ -17,7 +17,7 @@
   <img width="800" src="/images/components.png">
 </p>
 
-## Circuit Design
+## Wiring Diagram
 <p align="left">
   <img width="800" src="/images/circuit.png">
 </p>
