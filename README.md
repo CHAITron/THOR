@@ -22,6 +22,13 @@
   <img width="800" src="/images/circuit.png">
 </p>
 
+## Full Video: [https://youtu.be/gaYvqTGxSBk](https://youtu.be/gaYvqTGxSBk)
+[<img src="/images/thumbnail.png" width="425"/>](https://youtu.be/gaYvqTGxSBk)
+
+#### More Information
+https://medium.com/@chaitat.u/touchless-hand-operation-response-thor-for-fighting-against-covid-19-6d0e8d35a511
+
+
 ## References
 
 For LCD code --> https://www.circuitbasics.com/how-to-set-up-an-lcd-display-on-an-arduino/ <br />
